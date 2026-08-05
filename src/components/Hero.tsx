@@ -37,7 +37,7 @@ export function Hero() {
           variants={container}
           initial="hidden"
           animate="show"
-          className="font-display font-black text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] tracking-tighter leading-[0.85] uppercase flex flex-wrap justify-center gap-x-3 md:gap-x-8 gap-y-1 md:gap-y-2 overflow-hidden mb-8 md:mb-12"
+          className="font-display font-black text-[12vw] sm:text-[9vw] md:text-7xl lg:text-[7.5rem] xl:text-[8.5rem] tracking-tighter leading-[0.85] uppercase flex flex-wrap justify-center gap-x-3 md:gap-x-6 gap-y-1 md:gap-y-2 overflow-hidden mb-6 md:mb-8"
         >
           {words.map((word, i) => (
             <motion.span 
@@ -54,13 +54,13 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.8 }}
-          className="text-white/70 text-base md:text-2xl font-sans max-w-2xl mb-10 md:mb-16 font-medium tracking-tight"
+          className="text-white/70 text-base md:text-xl lg:text-2xl font-sans max-w-2xl mb-8 md:mb-10 font-medium tracking-tight"
         >
           Starting with digital assets that cannot be copied.
         </motion.p>
         
         <motion.a 
-          href="https://t.me/f2ndbrands"
+          href="mailto:brand@f2nd.com"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0, scale: 0.9 }}

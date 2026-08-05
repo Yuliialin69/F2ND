@@ -1,6 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { Manifesto } from "@/components/Manifesto";
+import { Principles } from "@/components/Principles";
 import { Capabilities } from "@/components/Capabilities";
 import { Team } from "@/components/Team";
 import { Works } from "@/components/Works";
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Manifesto />
+      <Principles />
       <Capabilities />
       <Works />
       <Team />

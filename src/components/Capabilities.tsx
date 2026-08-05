@@ -19,6 +19,18 @@ const capabilities = [
   {
     title: "Digital Experience & UX",
     desc: "We build high-performance digital environments that guide users through a seamless, immersive journey, converting attention into action."
+  },
+  {
+    title: "High-End Web Engineering",
+    desc: "Beyond aesthetics, we engineer highly performant, scalable, and secure web applications using cutting-edge architectures."
+  },
+  {
+    title: "Performance Marketing & SEO",
+    desc: "We engineer data-driven growth loops, commanding search visibility and maximizing ROI through algorithmic precision and strategic media buying."
+  },
+  {
+    title: "Content & Storytelling",
+    desc: "We don't just write copy. We forge narratives that establish thought leadership and build cult-like loyalty around your brand."
   }
 ];
 

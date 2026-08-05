@@ -91,10 +91,15 @@ ${selected.includes("Visual Identity") ? `Assets Needed: ${formData.assetsNeeded
               Application Received
             </h3>
             <p className="text-white/60 font-sans text-base md:text-lg mb-8 md:mb-12">
-              Our team will review your situation shortly. To expedite the process and speak directly with your dedicated manager, please connect on Telegram.
+              Your application has been logged. To guarantee priority review and connect directly with our team, please forward this request to our email.
             </p>
-            <a href="https://t.me/f2ndbrands" target="_blank" rel="noopener noreferrer" className="block w-full text-center bg-lime text-black py-5 md:py-8 font-display font-black text-xl md:text-3xl uppercase tracking-tighter hover:bg-white transition-colors duration-500 relative overflow-hidden group cursor-pointer">
-              <span className="relative z-10">Proceed to Telegram</span>
+            
+            {/* Email Button */}
+            <a 
+              href={`mailto:brand@f2nd.com?subject=${encodeURIComponent(`F2ND Application: ${formData.company || formData.name}`)}&body=${encodeURIComponent(`Hello F2ND team,\n\nI just submitted my application for ${formData.company || formData.name}. Looking forward to discussing our brand architecture.`)}`}
+              className="block w-full text-center bg-lime text-black py-5 md:py-8 font-display font-black text-xl md:text-3xl uppercase tracking-tighter hover:bg-white transition-colors duration-500 relative overflow-hidden group cursor-pointer"
+            >
+              <span className="relative z-10">Send Application via Email</span>
               <div className="absolute inset-0 bg-white transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-500 ease-out"></div>
             </a>
           </div>

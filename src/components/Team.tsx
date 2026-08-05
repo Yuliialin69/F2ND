@@ -6,7 +6,7 @@ const team = [
     name: "Nick",
     role: "Founder & Chief Brand Architect",
     bio: "Lost a multi-million dollar exit to a trademark dispute. Now, he engineers bulletproof brand architectures designed for market dominance.",
-    image: "https://pub-df33d1e0b23e4425b53771460160973b.r2.dev/Mentors/3.png"
+    image: "https://pub-6ab373e4f8a14951b823eed3c5dc87b5.r2.dev/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%C2%A0%E2%80%94%202026-08-05%20%D0%B2%C2%A015.13.40.png"
   },
   {
     name: "Michael",
@@ -24,7 +24,7 @@ const team = [
     name: "Julia",
     role: "Head of Digital Experience",
     bio: "Translates static identities into living ecosystems. Blurs the line between brand identity and flawless, high-end digital products.",
-    image: "https://pub-df33d1e0b23e4425b53771460160973b.r2.dev/Mentors/4.png"
+    image: "https://pub-6ab373e4f8a14951b823eed3c5dc87b5.r2.dev/IMG_6614.jpeg"
   }
 ];
 
