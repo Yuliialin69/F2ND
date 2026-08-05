@@ -3,6 +3,8 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { SmoothScroll } from "@/components/SmoothScroll";
 
+import { Navbar } from "@/components/Navbar";
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -27,6 +29,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}>
       <body className="min-h-screen flex flex-col bg-background text-foreground">
         <div className="noise-overlay" />
+        <Navbar />
         <SmoothScroll>
           {children}
         </SmoothScroll>
