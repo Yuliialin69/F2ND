@@ -1,0 +1,7 @@
+{
+  "name": "f2nd-html-build",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rm -rf dist && mkdir -p dist && cp -r assets index.html script.js style.css dist/"
+  }
+}
