@@ -41,6 +41,7 @@ body {
 .animate-marquee {
   -webkit-animation: marquee 20s linear infinite;
   animation: marquee 20s linear infinite;
+  will-change: transform;
 }
 
 /* Custom Scrollbar */
