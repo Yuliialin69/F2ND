@@ -61,8 +61,7 @@ body {
 
 /* Robust Marquee Animation V2 */
 .marquee-track {
-  display: flex;
-  width: max-content;
+  display: inline-flex;
   white-space: nowrap;
   -webkit-animation: marquee-track-anim 20s linear infinite;
   animation: marquee-track-anim 20s linear infinite;
