@@ -1,106 +1,60 @@
-/* style.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #000000;
+    --foreground: #ffffff;
+    --lime: #a3e635; /* Tailwind lime-400 */
+  }
+}
 
 body {
-  background: var(--color-background);
-  color: var(--color-foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--foreground);
 }
 
-/* Noise Overlay */
-.noise-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 50;
-  pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
-  opacity: 0.6;
+/* Custom Text Outline */
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+.text-outline-hover:hover {
+  color: var(--lime);
+  -webkit-text-stroke: 0px;
 }
 
-.animate-fadeIn {
-  animation: fadeIn 0.5s ease-out forwards;
-}
+/* 
+ * ROBUST MARQUEE FOR ALL BROWSERS (SAFARI & CHROME)
+ * Using flex with flex-shrink: 0 to prevent ANY wrapping or squishing.
+ */
 
-@keyframes marquee {
-  0% { 
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); 
-  }
-  100% { 
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); 
-  }
-}
-
-.animate-marquee {
-  -webkit-animation: marquee 20s linear infinite;
-  animation: marquee 20s linear infinite;
-  will-change: transform;
-}
-
-/* Custom Scrollbar */
-.custom-scrollbar::-webkit-scrollbar {
-  width: 4px;
-}
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
-}
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
-}
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #C4F000;
-}
-
-/* Robust Marquee Animation V2 */
-.marquee-track {
-  display: inline-flex;
-  white-space: nowrap;
-  -webkit-animation: marquee-track-anim 20s linear infinite;
-  animation: marquee-track-anim 20s linear infinite;
-  will-change: transform;
-}
-
-@-webkit-keyframes marquee-track-anim {
-  0% { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
-  100% { -webkit-transform: translate3d(-50%, 0, 0); transform: translate3d(-50%, 0, 0); }
-}
-
-@keyframes marquee-track-anim {
-  0% { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
-  100% { -webkit-transform: translate3d(-50%, 0, 0); transform: translate3d(-50%, 0, 0); }
-}
-
-/* The most bulletproof marquee possible */
 .my-marquee-wrapper {
+  display: flex;
   width: 100%;
   overflow: hidden;
-  white-space: nowrap;
 }
 
 .my-marquee-track {
-  display: inline-block;
-  white-space: nowrap;
+  display: flex;
+  flex-shrink: 0;
   -webkit-animation: my-marquee-anim 20s linear infinite;
   animation: my-marquee-anim 20s linear infinite;
   will-change: transform;
 }
 
 .my-marquee-content {
-  display: inline-block;
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .my-marquee-content > span {
-  display: inline-block;
-  vertical-align: middle;
+  flex-shrink: 0; /* Prevents text wrapping or shrinking */
+  white-space: nowrap; /* Hard force no wrap */
+  display: block;
   margin-right: 2rem;
 }
 
