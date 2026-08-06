@@ -1,3 +1,8 @@
+
+// Clean up old ledger hash from URL
+if (window.location.hash === '#ledger') {
+  history.replaceState(null, null, window.location.pathname + window.location.search);
+}
 // script.js
 
 // 1. Initialize Smooth Scroll (Lenis)
