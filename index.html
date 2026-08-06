@@ -26,14 +26,13 @@
     <!-- Sticky Navbar -->
     <nav class="fixed top-0 left-0 w-full z-[100] bg-[#050505]/90 backdrop-blur-md border-b border-white/10 px-4 md:px-8 py-4 flex items-center justify-between">
       <a href="#hero" class="block">
-        <img src="assets/logo.svg" class="h-8 sm:h-12 w-auto hover:opacity-80 transition-opacity" alt="F2ND Logo">
+        <img src="assets/logo.svg" class="h-8 sm:h-10 w-auto hover:opacity-80 transition-opacity" alt="F2ND Logo">
       </a>
       <div class="flex items-center gap-4 md:gap-8">
         <a href="#works" class="font-sans font-bold text-[9px] uppercase tracking-widest text-white/60 hover:text-lime transition-colors">Works</a>
         <a href="#architecture" class="font-sans font-bold text-[9px] uppercase tracking-widest text-white/60 hover:text-lime transition-colors hidden md:block">Architecture</a>
         <a href="#hard-truths" class="font-sans font-bold text-[9px] uppercase tracking-widest text-white/60 hover:text-lime transition-colors hidden md:block">Truths</a>
         <a href="#team" class="font-sans font-bold text-[9px] uppercase tracking-widest text-white/60 hover:text-lime transition-colors">Team</a>
-        <a href="#ledger" class="font-sans font-bold text-[9px] uppercase tracking-widest text-white/60 hover:text-lime transition-colors">Ledger</a>
         <a href="#application" class="font-sans font-bold text-[9px] uppercase tracking-widest text-lime hover:text-white transition-colors">Apply</a>
       </div>
     </nav>
@@ -68,7 +67,7 @@
     <!-- The Syndicate (Marquee) -->
     <section id="services" class="relative z-10 w-full border-t border-b border-white/10 py-6 md:py-8 overflow-hidden bg-lime text-black mt-8 md:mt-12">
       <div class="marquee-container flex whitespace-nowrap select-none w-full">
-        <div class="marquee-content flex gap-8 items-center animate-marquee shrink-0 pr-8 w-max">
+        <div class="marquee-content flex gap-8 items-center animate-marquee shrink-0 pr-8" style="min-width: max-content; width: max-content;">
           <span class="font-display font-black text-2xl md:text-3xl tracking-tighter uppercase">Brand Architecture</span>
           <span class="font-sans font-bold text-xs">///</span>
           <span class="font-display font-black text-2xl md:text-3xl tracking-tighter uppercase">Domain Acquisition</span>
@@ -83,7 +82,7 @@
           <span class="font-sans font-bold text-xs">///</span>
         </div>
         <!-- Duplicate for seamless loop -->
-        <div class="marquee-content flex gap-8 items-center animate-marquee shrink-0 pr-8 w-max" aria-hidden="true">
+        <div class="marquee-content flex gap-8 items-center animate-marquee shrink-0 pr-8" style="min-width: max-content; width: max-content;" aria-hidden="true">
           <span class="font-display font-black text-2xl md:text-3xl tracking-tighter uppercase">Brand Architecture</span>
           <span class="font-sans font-bold text-xs">///</span>
           <span class="font-display font-black text-2xl md:text-3xl tracking-tighter uppercase">Domain Acquisition</span>
@@ -375,232 +374,6 @@
     </section>
 
     <!-- Intelligence -->
-    <section id="ledger" class="relative z-10 w-full px-6 py-24 md:py-32 bg-[#050505] border-t border-white/10">
-      <div class="max-w-7xl mx-auto">
-        <div class="flex justify-between items-end border-b border-white/10 pb-8 mb-12">
-          <h3 class="font-display font-black text-3xl md:text-5xl lg:text-6xl tracking-tighter uppercase text-white">The Ledger</h3>
-          <a href="#" class="text-lime text-[10px] md:text-xs font-sans font-bold tracking-[0.2em] uppercase hover:text-white transition-colors duration-300 hidden md:block">Read All Intelligence</a>
-        </div>
-                <div class="flex flex-col max-h-[500px] md:max-h-[600px] overflow-y-auto pr-2 md:pr-4 custom-scrollbar border-t border-white/10">
-          <!-- Item 1 -->
-          <div class="group border-b border-white/10 accordion-item">
-            <button class="w-full py-6 md:py-8 flex items-center justify-between gap-4 text-left accordion-btn cursor-pointer outline-none group">
-              <div class="w-16 md:w-24 shrink-0">
-                <span class="text-lime font-sans font-bold text-[10px] md:text-xs tracking-widest uppercase">Vol. 014</span>
-              </div>
-              <h4 class="font-display font-bold text-base md:text-xl lg:text-2xl uppercase tracking-tighter text-lime text-center flex-1">
-                The Death of Secondary Extensions: Why .COM Remains the Only Currency That Matters
-              </h4>
-              <div class="w-16 md:w-24 shrink-0 flex justify-end">
-                <svg style="width: 20px; height: 20px;" class="text-white/40 group-hover:text-lime transition-all duration-500 accordion-icon shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path class="horizontal-line" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16" />
-                  <path class="vertical-line transition-transform duration-500 origin-center" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16" />
-                </svg>
-              </div>
-            </button>
-            <div class="accordion-content overflow-hidden max-h-0 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]">
-              <div class="pb-6 md:pb-8 space-y-4">
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">Secondary domains like .co, .io, and .ai are rented identities. They signal a compromise to the market. We analyze why true legacy brands inevitably acquire their exact-match .com, and why securing it early is the most cost-effective defensive strategy a founder can execute.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">In the high-stakes world of enterprise B2B and consumer tech, your domain is the absolute foundation of your brand equity. A compromised domain creates immediate cognitive friction. When a potential partner or client has to remember to type '.io' instead of '.com', you are losing direct traffic and, more importantly, you are bleeding authority.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">Furthermore, relying on alternative TLDs makes your brand vulnerable to domain squatting and malicious phishing attacks. Securing the exact-match .com is not just a marketing flex; it is a critical security measure and a non-negotiable asset for any company intending to scale globally and dominate its category.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Item 2 -->
-          <div class="group border-b border-white/10 accordion-item">
-            <button class="w-full py-6 md:py-8 flex items-center justify-between gap-4 text-left accordion-btn cursor-pointer outline-none group">
-              <div class="w-16 md:w-24 shrink-0">
-                <span class="text-lime font-sans font-bold text-[10px] md:text-xs tracking-widest uppercase">Vol. 013</span>
-              </div>
-              <h4 class="font-display font-bold text-base md:text-xl lg:text-2xl uppercase tracking-tighter text-white group-hover:text-lime transition-colors duration-500 text-center flex-1">
-                Brutalism in B2B: Why Stripping Away Design Increases Conversion by 40%
-              </h4>
-              <div class="w-16 md:w-24 shrink-0 flex justify-end">
-                <svg style="width: 20px; height: 20px;" class="text-white/40 group-hover:text-lime transition-all duration-500 accordion-icon shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path class="horizontal-line" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16" />
-                  <path class="vertical-line transition-transform duration-500 origin-center" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16" />
-                </svg>
-              </div>
-            </button>
-            <div class="accordion-content overflow-hidden max-h-0 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]">
-              <div class="pb-6 md:pb-8 space-y-4">
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">Decorative UI is a distraction that dilutes your value proposition. By employing brutalist, highly functional grid systems, we force the user to focus entirely on the core offering. The result is a frictionless experience that commands authority and drastically improves conversion rates.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">Traditional B2B web design relies heavily on stock photography, excessive animations, and convoluted navigation structures. These elements create cognitive overload. Brutalism strips away the unnecessary, utilizing stark typography, high-contrast monochrome palettes, and clear spatial hierarchy to direct attention precisely where it matters.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">This approach signals absolute confidence. When your product or service is truly elite, it does not need to be hidden behind superficial gloss. A brutalist interface tells your prospective clients that you value efficiency, directness, and substance over style—translating directly into higher trust and faster decision-making.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Item 3 -->
-          <div class="group border-b border-white/10 accordion-item">
-            <button class="w-full py-6 md:py-8 flex items-center justify-between gap-4 text-left accordion-btn cursor-pointer outline-none group">
-              <div class="w-16 md:w-24 shrink-0">
-                <span class="text-lime font-sans font-bold text-[10px] md:text-xs tracking-widest uppercase">Vol. 012</span>
-              </div>
-              <h4 class="font-display font-bold text-base md:text-xl lg:text-2xl uppercase tracking-tighter text-white group-hover:text-lime transition-colors duration-500 text-center flex-1">
-                The Shadow Market: How Premium Domains Are Acquired Before Competitors Notice
-              </h4>
-              <div class="w-16 md:w-24 shrink-0 flex justify-end">
-                <svg style="width: 20px; height: 20px;" class="text-white/40 group-hover:text-lime transition-all duration-500 accordion-icon shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path class="horizontal-line" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16" />
-                  <path class="vertical-line transition-transform duration-500 origin-center" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16" />
-                </svg>
-              </div>
-            </button>
-            <div class="accordion-content overflow-hidden max-h-0 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]">
-              <div class="pb-6 md:pb-8 space-y-4">
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">The best digital real estate is rarely listed publicly. We operate in the shadow market of private brokers and silent auctions, executing stealth acquisitions that secure premium assets without inflating prices or alerting your competition to your strategic moves.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">Most founders make the critical error of approaching premium domain owners directly using their corporate email. This instantly triggers a price surge. Our methodology relies on utilizing anonymous LLCs, trusted third-party brokers, and escrow services to mask the identity of the end buyer until the asset is fully secured and transferred.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">Understanding the psychology of legacy domain owners is paramount. Many of these assets have been held since the 1990s. We analyze historical WHOIS data, establish rapport through specialized intermediaries, and structure deals that offer tax advantages or staged payouts, ensuring our clients acquire category-defining domains at fair market value.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Item 4 -->
-          <div class="group border-b border-white/10 accordion-item">
-            <button class="w-full py-6 md:py-8 flex items-center justify-between gap-4 text-left accordion-btn cursor-pointer outline-none group">
-              <div class="w-16 md:w-24 shrink-0">
-                <span class="text-lime font-sans font-bold text-[10px] md:text-xs tracking-widest uppercase">Vol. 011</span>
-              </div>
-              <h4 class="font-display font-bold text-base md:text-xl lg:text-2xl uppercase tracking-tighter text-white group-hover:text-lime transition-colors duration-500 text-center flex-1">
-                Naming as a Legal Weapon: Surviving the Trademark Wars
-              </h4>
-              <div class="w-16 md:w-24 shrink-0 flex justify-end">
-                <svg style="width: 20px; height: 20px;" class="text-white/40 group-hover:text-lime transition-all duration-500 accordion-icon shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path class="horizontal-line" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16" />
-                  <path class="vertical-line transition-transform duration-500 origin-center" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16" />
-                </svg>
-              </div>
-            </button>
-            <div class="accordion-content overflow-hidden max-h-0 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]">
-              <div class="pb-6 md:pb-8 space-y-4">
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">A brand name is a liability if it cannot be legally defended. We engineer nomenclature that clears global trademark registries and creates a fortress around your intellectual property, ensuring your market share cannot be diluted by copycats.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">The landscape of intellectual property is littered with companies forced into catastrophic rebrands after receiving cease-and-desist letters. A strong brand name must be more than just memorable; it must be legally impenetrable. We conduct exhaustive preliminary conflict checks across USPTO, WIPO, and local databases before presenting any naming concept.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">Beyond mere registration, we focus on linguistic availability. A true global brand cannot mean something offensive in another language, nor can its phonetic structure conflict with existing marks. By treating naming as a legal strategy rather than just a creative exercise, we build brands that can aggressively defend their territory in any jurisdiction.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Item 5 -->
-          <div class="group border-b border-white/10 accordion-item">
-            <button class="w-full py-6 md:py-8 flex items-center justify-between gap-4 text-left accordion-btn cursor-pointer outline-none group">
-              <div class="w-16 md:w-24 shrink-0">
-                <span class="text-lime font-sans font-bold text-[10px] md:text-xs tracking-widest uppercase">Vol. 010</span>
-              </div>
-              <h4 class="font-display font-bold text-base md:text-xl lg:text-2xl uppercase tracking-tighter text-white group-hover:text-lime transition-colors duration-500 text-center flex-1">
-                The Hierarchy of Authority: Structuring a Brand Architecture That Scales
-              </h4>
-              <div class="w-16 md:w-24 shrink-0 flex justify-end">
-                <svg style="width: 20px; height: 20px;" class="text-white/40 group-hover:text-lime transition-all duration-500 accordion-icon shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path class="horizontal-line" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16" />
-                  <path class="vertical-line transition-transform duration-500 origin-center" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16" />
-                </svg>
-              </div>
-            </button>
-            <div class="accordion-content overflow-hidden max-h-0 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]">
-              <div class="pb-6 md:pb-8 space-y-4">
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">As companies acquire or launch new product lines, disorganized identities cause brand dilution. We implement strict, logical brand architectures that organize sub-brands seamlessly under a master identity, consolidating market power and clarity.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">Without a cohesive architecture, a growing company rapidly becomes a 'house of brands'—a chaotic portfolio where each product competes for attention and resources. We advocate for a 'branded house' model, utilizing monolithic brand structures that transfer the equity and trust of the parent company directly to every new initiative.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">This requires rigorous visual and verbal guidelines. Typography, color systems, and nomenclature must follow a strict mathematical logic. When a client sees a new offering, they should immediately recognize its origin. This structural discipline reduces marketing spend per product and creates a formidable, unified market presence.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Item 6 -->
-          <div class="group border-b border-white/10 accordion-item">
-            <button class="w-full py-6 md:py-8 flex items-center justify-between gap-4 text-left accordion-btn cursor-pointer outline-none group">
-              <div class="w-16 md:w-24 shrink-0">
-                <span class="text-lime font-sans font-bold text-[10px] md:text-xs tracking-widest uppercase">Vol. 009</span>
-              </div>
-              <h4 class="font-display font-bold text-base md:text-xl lg:text-2xl uppercase tracking-tighter text-white group-hover:text-lime transition-colors duration-500 text-center flex-1">
-                Beyond the MVP: Why Your Series A Requires a Total Identity Overhaul
-              </h4>
-              <div class="w-16 md:w-24 shrink-0 flex justify-end">
-                <svg style="width: 20px; height: 20px;" class="text-white/40 group-hover:text-lime transition-all duration-500 accordion-icon shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path class="horizontal-line" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16" />
-                  <path class="vertical-line transition-transform duration-500 origin-center" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16" />
-                </svg>
-              </div>
-            </button>
-            <div class="accordion-content overflow-hidden max-h-0 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]">
-              <div class="pb-6 md:pb-8 space-y-4">
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">What worked for your seed round will not survive institutional scrutiny. A fragmented early-stage identity signals instability. Elevating your visual language and acquiring your premium domain is a prerequisite to signaling maturity and category leadership.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">Seed-stage companies are forgiven for using temporary branding and alternative domains because the focus is purely on product-market fit. However, as you approach Series A and beyond, you are no longer just selling a product; you are selling the promise of a category-defining enterprise. Institutional investors and enterprise clients look for signals of permanence.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">A comprehensive identity overhaul involves retiring the 'startup' aesthetic. We transition brands into their enterprise era by implementing sophisticated typographic systems, securing the exact-match .com, and developing a tone of voice that speaks directly to C-suite decision-makers. It is the visual equivalent of putting on a tailored suit.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Item 7 -->
-          <div class="group border-b border-white/10 accordion-item">
-            <button class="w-full py-6 md:py-8 flex items-center justify-between gap-4 text-left accordion-btn cursor-pointer outline-none group">
-              <div class="w-16 md:w-24 shrink-0">
-                <span class="text-lime font-sans font-bold text-[10px] md:text-xs tracking-widest uppercase">Vol. 008</span>
-              </div>
-              <h4 class="font-display font-bold text-base md:text-xl lg:text-2xl uppercase tracking-tighter text-white group-hover:text-lime transition-colors duration-500 text-center flex-1">
-                Color Psychology in High-Stakes Finance and Tech
-              </h4>
-              <div class="w-16 md:w-24 shrink-0 flex justify-end">
-                <svg style="width: 20px; height: 20px;" class="text-white/40 group-hover:text-lime transition-all duration-500 accordion-icon shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path class="horizontal-line" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16" />
-                  <path class="vertical-line transition-transform duration-500 origin-center" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16" />
-                </svg>
-              </div>
-            </button>
-            <div class="accordion-content overflow-hidden max-h-0 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]">
-              <div class="pb-6 md:pb-8 space-y-4">
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">The world's most powerful brands lean on stark, monochromatic palettes with deep contrast. A deliberate lack of overwhelming color conveys absolute authority, trust, and permanence—traits critical for fintech and deep-tech enterprises.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">Amateur brands use color to attract attention. Legacy brands use the absence of color to command respect. In sectors where trust and security are paramount—such as financial infrastructure, artificial intelligence, and enterprise security—a hyper-colorful palette triggers subconscious warnings of instability and lack of seriousness.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">We utilize engineered monochrome systems accented by a single, highly specific primary color (such as electric lime or deep cobalt). This creates a visual hierarchy that is both aggressive and restrained. The stark contrast ensures maximum legibility and accessibility, while the minimalist approach ensures the brand feels timeless, avoiding the trap of ephemeral design trends.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Item 8 -->
-          <div class="group border-b border-white/10 accordion-item">
-            <button class="w-full py-6 md:py-8 flex items-center justify-between gap-4 text-left accordion-btn cursor-pointer outline-none group">
-              <div class="w-16 md:w-24 shrink-0">
-                <span class="text-lime font-sans font-bold text-[10px] md:text-xs tracking-widest uppercase">Vol. 007</span>
-              </div>
-              <h4 class="font-display font-bold text-base md:text-xl lg:text-2xl uppercase tracking-tighter text-white group-hover:text-lime transition-colors duration-500 text-center flex-1">
-                Digital Real Estate as a Liquid Asset
-              </h4>
-              <div class="w-16 md:w-24 shrink-0 flex justify-end">
-                <svg style="width: 20px; height: 20px;" class="text-white/40 group-hover:text-lime transition-all duration-500 accordion-icon shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path class="horizontal-line" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16" />
-                  <path class="vertical-line transition-transform duration-500 origin-center" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16" />
-                </svg>
-              </div>
-            </button>
-            <div class="accordion-content overflow-hidden max-h-0 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]">
-              <div class="pb-6 md:pb-8 pl-0 md:pl-[7rem] max-w-4xl space-y-4">
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">Premium domains are consistently miscategorized as marketing expenses. They are, in fact, highly liquid digital assets that appreciate in value and can be leveraged on a balance sheet. Owning the exact-match .com is an investment, not a cost.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">Consider the physical real estate market: a storefront on Fifth Avenue costs exponentially more than one in a secondary city, but it guarantees foot traffic, prestige, and institutional trust. The digital equivalent is an ultra-premium, exact-match .com. It is a finite resource. They are no longer being created, and their value historically appreciates year over year.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">Forward-thinking CFOs understand that acquiring a premium domain is an asset transfer, converting cash into digital real estate. It provides a defensive moat against competitors, eliminates the ongoing tax of lost traffic, and can be liquidated or borrowed against in the future. It is the ultimate flex of corporate strength.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Item 9 -->
-          <div class="group border-b border-white/10 accordion-item">
-            <button class="w-full py-6 md:py-8 flex items-center justify-between gap-4 text-left accordion-btn cursor-pointer outline-none group">
-              <div class="w-16 md:w-24 shrink-0">
-                <span class="text-lime font-sans font-bold text-[10px] md:text-xs tracking-widest uppercase">Vol. 006</span>
-              </div>
-              <h4 class="font-display font-bold text-base md:text-xl lg:text-2xl uppercase tracking-tighter text-white group-hover:text-lime transition-colors duration-500 text-center flex-1">
-                The Illusion of Choice: Engineering User Journeys That Convert
-              </h4>
-              <div class="w-16 md:w-24 shrink-0 flex justify-end">
-                <svg style="width: 20px; height: 20px;" class="text-white/40 group-hover:text-lime transition-all duration-500 accordion-icon shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path class="horizontal-line" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16" />
-                  <path class="vertical-line transition-transform duration-500 origin-center" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16" />
-                </svg>
-              </div>
-            </button>
-            <div class="accordion-content overflow-hidden max-h-0 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]">
-              <div class="pb-6 md:pb-8 pl-0 md:pl-[7rem] max-w-4xl space-y-4">
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">True luxury and high-end B2B experiences do not offer endless options. They curate a single, definitive path that guides the user to a precise outcome. By eliminating choice fatigue, we establish authority and accelerate the path to acquisition.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">When you present a user with too many navigation links, secondary buttons, and divergent pathways, you force them to make decisions. Decision fatigue leads to abandonment. Our methodology relies on 'The Illusion of Choice'—designing funnels that feel exploratory but are mathematically engineered to drive the user toward one specific, high-value conversion.</p>
-                <p class="font-sans text-sm md:text-base text-white/60 leading-relaxed">This involves ruthless editing of interface elements. We remove dropdown menus in favor of linear scrolling, replace multiple CTA buttons with a single primary action, and utilize progressive disclosure to reveal information only when it becomes relevant. By acting as a strict curator, the brand positions itself as the expert, telling the client exactly what they need to do next.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Application -->
     <section id="application" class="relative z-10 w-full pt-16 md:pt-48 flex flex-col items-center border-t border-white/10 mt-8 md:mt-12 bg-[#050505]">
