@@ -58,3 +58,16 @@ body {
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #C4F000;
 }
+
+/* Robust Marquee Animation */
+.marquee-track-container {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee-track-anim 20s linear infinite;
+  will-change: transform;
+}
+
+@keyframes marquee-track-anim {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
