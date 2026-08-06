@@ -287,3 +287,37 @@ if (form) {
     }, 800);
   });
 }
+
+// Accordion Logic for The Ledger
+const accordionBtns = document.querySelectorAll('.accordion-btn');
+
+accordionBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.accordion-item');
+    const content = item.querySelector('.accordion-content');
+    const iconLine = item.querySelector('.vertical-line');
+    
+    const isActive = item.classList.contains('active');
+    
+    // Close all other accordions
+    document.querySelectorAll('.accordion-item').forEach(otherItem => {
+      otherItem.classList.remove('active');
+      const otherContent = otherItem.querySelector('.accordion-content');
+      const otherIcon = otherItem.querySelector('.vertical-line');
+      if(otherContent) otherContent.style.maxHeight = '0px';
+      if(otherIcon) {
+        otherIcon.style.transform = 'rotate(0deg)';
+        otherIcon.style.opacity = '1';
+      }
+    });
+
+    if (!isActive) {
+      item.classList.add('active');
+      content.style.maxHeight = content.scrollHeight + 'px';
+      if(iconLine) {
+        iconLine.style.transform = 'rotate(90deg)';
+        iconLine.style.opacity = '0';
+      }
+    }
+  });
+});
