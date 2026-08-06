@@ -63,6 +63,7 @@ body {
 .marquee-track {
   display: flex;
   width: max-content;
+  white-space: nowrap;
   -webkit-animation: marquee-track-anim 20s linear infinite;
   animation: marquee-track-anim 20s linear infinite;
   will-change: transform;
