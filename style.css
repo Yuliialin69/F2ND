@@ -77,3 +77,39 @@ body {
   0% { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
   100% { -webkit-transform: translate3d(-50%, 0, 0); transform: translate3d(-50%, 0, 0); }
 }
+
+/* The most bulletproof marquee possible */
+.my-marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.my-marquee-track {
+  display: inline-block;
+  white-space: nowrap;
+  -webkit-animation: my-marquee-anim 20s linear infinite;
+  animation: my-marquee-anim 20s linear infinite;
+  will-change: transform;
+}
+
+.my-marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.my-marquee-content > span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2rem;
+}
+
+@-webkit-keyframes my-marquee-anim {
+  0% { -webkit-transform: translateX(0); }
+  100% { -webkit-transform: translateX(-50%); }
+}
+
+@keyframes my-marquee-anim {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
