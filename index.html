@@ -24,15 +24,11 @@
 <body class="bg-background text-foreground font-sans overflow-x-hidden antialiased selection:bg-lime selection:text-black">
   <div class="noise-overlay"></div>
 
-  <!-- Logo outside mix-blend so it always shows correctly -->
-  <div class="fixed top-0 left-0 z-[101] px-6 py-6 pointer-events-none">
+  <header class="fixed top-0 left-0 w-full z-[100] px-6 py-8 flex justify-between items-center pointer-events-none">
     <a href="/" class="pointer-events-auto" aria-label="F2ND Home">
-      <img src="assets/logo.png" alt="F2ND" class="h-10 sm:h-12 w-auto" style="filter: drop-shadow(0 0 0 transparent);">
+      <img src="assets/logo-dark.png" alt="F2ND" class="h-8 sm:h-10 w-auto">
     </a>
-  </div>
-
-  <header class="fixed top-0 left-0 w-full z-[100] px-6 py-8 flex justify-end items-center mix-blend-difference text-white pointer-events-none">
-    <a href="mailto:brand@f2nd.com" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-3 bg-transparent border-none text-white text-sm font-bold tracking-wide uppercase overflow-hidden cursor-pointer pointer-events-auto">
+    <a href="mailto:brand@f2nd.com" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-3 bg-transparent border-none text-white text-sm font-bold tracking-wide uppercase overflow-hidden cursor-pointer pointer-events-auto mix-blend-difference">
       <span class="relative z-10">Inquire</span>
       <span class="w-2.5 h-2.5 rounded-full bg-lime transition-transform duration-300 group-hover:scale-[3]"></span>
     </a>
